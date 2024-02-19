@@ -1,0 +1,42 @@
+<html>
+     <head>
+           <meta charset="UTF-8">
+           <title> Google Search Engine </title>
+           <link rel="stylesheet" href="style.css">
+     </head>
+<body>
+          <section>
+                  <div class="main">
+                  <img src="youtube.png" style="width:200px;height:150px;">
+                                   <div class="searchBx">
+                                   <input id="txtSearch" type="Search" name="" class="query" >
+                                   <button type="submit" onclick="cc()"> <img src="search.png"  class="img2"> </button>  
+                                   <button1 > <img src="mic.png"  class="img1"> </button1>  
+                                                      
+                                                          
+                                                      
+                                   </div>
+                                  <div class="button">
+                                    <button type="submit" id="Btn" onclick="cc()" class="searchBtn"> Google Search </button>
+                                  </div>
+                  </div>
+             </section>
+<script src="abc.js">
+
+</script>
+
+<script>
+var input = document.getElementById("txtSearch");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("Btn").click();
+  }
+});
+</script>
+
+
+
+</body>
+
+</html>
